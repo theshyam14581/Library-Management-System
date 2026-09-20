@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,137 +8,160 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <div>
+    <div id="home-page">
 
 <!-- //navbar-section-  home -->
-        <div class="navbar">
-            <div class="nav-logo">
-                <img src="./assets/icons/LBS-LOGO.png" alt="">
+        <div class="navbar" id="navbar">
+            <div class="nav-logo" id="nav-logo">
+                <img class="logo-img" id="logo-img" src="./assets/icons/LBS-LOGO.png" alt="">
             </div>
-            <div class="nav-option">
-                <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Features</li>
-                    <li>Contact</li>
+
+            <div class="nav-option" id="nav-option">
+                <ul class="nav-list" id="nav-list">
+                    <li class="nav-item" id="nav-home">Home</li>
+                    <li class="nav-item" id="nav-about">About</li>
+                    <li class="nav-item" id="nav-features">Features</li>
+                    <li class="nav-item" id="nav-contact">Contact</li>
                 </ul>
             </div>
-            <div class="nav-btns">
-                <button class="btn1">
-                    <a href="./pages/login.html">Login</a>
+
+            <div class="nav-btns" id="nav-btns">
+                <button class="btn1" id="login-btn">
+                    <a class="nav-btn-link" id="login-link" href="./pages/login.html">Login</a>
                 </button>
-                <button class="btn2">
-                    <a href="./pages/register.html">Register</a>
+                <button class="btn2" id="register-btn">
+                    <a class="nav-btn-link" id="register-link" href="./pages/register.html">Register</a>
                 </button>
             </div>
         </div>
+
 <!-- //this is section 1 of home page- - -->
-        <div class="section1">
-            <div>
-                <div>
-                    <h6>
-                        <img src="" alt="">Smart Library . Bright Future
+        <div class="section1" id="section1">
+            <div class="section1-content" id="section1-content">
+                <div class="section1-tag-container" id="section1-tag-container">
+                    <h6 class="section1-tag" id="section1-tag">
+                        <img class="section1-tag-img" id="section1-tag-img" src="" alt="">Smart Library . Bright Future
                     </h6>
                 </div>
-                <div>
-                    <h1>Library Management <span>System</span> </h1>
-                    
+
+                <div class="section1-title-container" id="section1-title-container">
+                    <h1 class="section1-title" id="section1-title">
+                        Library Management <span class="section1-title-span" id="section1-title-span">System</span>
+                    </h1>
                 </div>
-                <div>
-                    <p>manage books, mambers, and transactions effortlessly. A smarter, simpler, and digital way to run your library.</p>
+
+                <div class="section1-description-container" id="section1-description-container">
+                    <p class="section1-description" id="section1-description">
+                        manage books, mambers, and transactions effortlessly. A smarter, simpler, and digital way to run your library.
+                    </p>
                 </div>
-                <div>
-                    <button><a href="">Get Started -></a></button>
-                    <button><a href="">Learn More</a></button>
+
+                <div class="section1-buttons" id="section1-buttons">
+                    <button class="section1-btn get-started-btn" id="get-started-btn">
+                        <a class="section1-btn-link" id="get-started-link" href="">Get Started -></a>
+                    </button>
+                    <button class="section1-btn learn-more-btn" id="learn-more-btn">
+                        <a class="section1-btn-link" id="learn-more-link" href="">Learn More</a>
+                    </button>
                 </div>
             </div>
-            <div>
-                <img src="./assets/images/books-section.png" alt="">
+
+            <div class="section1-image-container" id="section1-image-container">
+                <img class="section1-image" id="section1-image" src="./assets/images/books-section.png" alt="">
             </div>
         </div>
+
 <!-- //this is card section -  -->
-        <div>
-            <div class="card">
-                <div>
-                    <img src="" alt="">
+        <div class="cards-section" id="cards-section">
+
+            <div class="card" id="manage-books-card">
+                <div class="card-icon" id="manage-books-icon">
+                    <img class="card-icon-img" id="manage-books-img" src="" alt="">
                 </div>
-                <div>
-                    <h3>Manage Books</h3>
-                    <p>Add, update and organize books easily.</p>
-                </div>
-            </div>
-            <div class="card">
-                <div>
-                    <img src="" alt="">
-                </div>
-                <div>
-                    <h3>Manage Members</h3>
-                    <p>Keep track of all library members.</p>
+                <div class="card-content" id="manage-books-content">
+                    <h3 class="card-title" id="manage-books-title">Manage Books</h3>
+                    <p class="card-description" id="manage-books-description">Add, update and organize books easily.</p>
                 </div>
             </div>
-            <div class="card">
-                <div>
-                    <img src="" alt="">
+
+            <div class="card" id="manage-members-card">
+                <div class="card-icon" id="manage-members-icon">
+                    <img class="card-icon-img" id="manage-members-img" src="" alt="">
                 </div>
-                <div>
-                    <h3>Track Transactions</h3>
-                    <p>issue and return books with ease.</p>
-                </div>
-            </div>
-            <div class="card">
-                <div>
-                    <img src="" alt="">
-                </div>
-                <div>
-                    <h3>Get Insights</h3>
-                    <p>View reports and library statistics.</p>
+                <div class="card-content" id="manage-members-content">
+                    <h3 class="card-title" id="manage-members-title">Manage Members</h3>
+                    <p class="card-description" id="manage-members-description">Keep track of all library members.</p>
                 </div>
             </div>
+
+            <div class="card" id="track-transactions-card">
+                <div class="card-icon" id="track-transactions-icon">
+                    <img class="card-icon-img" id="track-transactions-img" src="" alt="">
+                </div>
+                <div class="card-content" id="track-transactions-content">
+                    <h3 class="card-title" id="track-transactions-title">Track Transactions</h3>
+                    <p class="card-description" id="track-transactions-description">issue and return books with ease.</p>
+                </div>
+            </div>
+
+            <div class="card" id="get-insights-card">
+                <div class="card-icon" id="get-insights-icon">
+                    <img class="card-icon-img" id="get-insights-img" src="" alt="">
+                </div>
+                <div class="card-content" id="get-insights-content">
+                    <h3 class="card-title" id="get-insights-title">Get Insights</h3>
+                    <p class="card-description" id="get-insights-description">View reports and library statistics.</p>
+                </div>
+            </div>
+
         </div>
 
 
 <!-- //section2 of home page-                 -->
-        <div>
+        <div class="section2" id="section2">
 
-            <div>
-                <div>
-                    <img src="" alt="">
+            <div class="stat-card" id="total-books-stat">
+                <div class="stat-icon" id="total-books-icon">
+                    <img class="stat-icon-img" id="total-books-img" src="" alt="">
                 </div>
-                <div>
-                    <h3>1,250+</h3>
-                    <p>Total Books</p>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <img src="" alt="">
-                </div>
-                <div>
-                    <h3>320+</h3>
-                    <p>Members</p>
+                <div class="stat-content" id="total-books-content">
+                    <h3 class="stat-number" id="total-books-number">1,250+</h3>
+                    <p class="stat-label" id="total-books-label">Total Books</p>
                 </div>
             </div>
-            <div>
-                <div>
-                    <img src="" alt="">
+
+            <div class="stat-card" id="members-stat">
+                <div class="stat-icon" id="members-icon">
+                    <img class="stat-icon-img" id="members-img" src="" alt="">
                 </div>
-                <div>
-                    <h3>2,450</h3>
-                    <p>Transactions</p>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <img src="" alt="">
-                </div>
-                <div>
-                    <h3>99%</h3>
-                    <p>User Setisfections</p>
+                <div class="stat-content" id="members-content">
+                    <h3 class="stat-number" id="members-number">320+</h3>
+                    <p class="stat-label" id="members-label">Members</p>
                 </div>
             </div>
-            
-            
+
+            <div class="stat-card" id="transactions-stat">
+                <div class="stat-icon" id="transactions-icon">
+                    <img class="stat-icon-img" id="transactions-img" src="" alt="">
+                </div>
+                <div class="stat-content" id="transactions-content">
+                    <h3 class="stat-number" id="transactions-number">2,450</h3>
+                    <p class="stat-label" id="transactions-label">Transactions</p>
+                </div>
+            </div>
+
+            <div class="stat-card" id="user-satisfaction-stat">
+                <div class="stat-icon" id="user-satisfaction-icon">
+                    <img class="stat-icon-img" id="user-satisfaction-img" src="" alt="">
+                </div>
+                <div class="stat-content" id="user-satisfaction-content">
+                    <h3 class="stat-number" id="user-satisfaction-number">99%</h3>
+                    <p class="stat-label" id="user-satisfaction-label">User Setisfections</p>
+                </div>
+            </div>
+
         </div>
     </div>
 </body>
 </html>
+

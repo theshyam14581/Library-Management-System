@@ -12,34 +12,6 @@
 
 
 /* =========================
-   ROOT VARIABLES
-   ========================= */
-
- :root {
-    --primary: #5b35e7;
-    --primary-dark: #4322c7;
-    --primary-light: #eee9ff;
-
-    --text-dark: #111642;
-    --text: #394572;
-    --text-light: #68739a;
-
-    --white: #ffffff;
-    --border: #e9e8f5;
-
-    --bg: #f8f8ff;
-
-    --green: #19b96b;
-    --blue: #2979ff;
-    --orange: #f59e0b;
-
-    --shadow: 0 10px 30px rgba(67, 48, 180, 0.08);
-
-    --radius: 18px; 
-} 
-
-
-/* =========================
    RESET
    ========================= */
 
@@ -57,8 +29,8 @@ html {
 
 body {
     font-family: "Inter", sans-serif;
-    background: var(--bg);
-    color: var(--text-dark);
+    background: #f8f8ff;
+    color: #111642;
     overflow-x: hidden;
 }
 
@@ -98,7 +70,7 @@ button {
    MAIN HOME PAGE
    ========================================================= */
 
-body > div {
+#home-page {
     width: 100%;
     min-height: 100vh;
 }
@@ -142,7 +114,7 @@ body > div {
 }
 
 
-.nav-logo img {
+.logo-img {
     width: 210px;
     height: 58px;
 
@@ -160,14 +132,14 @@ body > div {
 }
 
 
-.nav-option ul {
+.nav-list {
     display: flex;
     align-items: center;
     gap: 42px;
 }
 
 
-.nav-option li {
+.nav-item {
     position: relative;
 
     font-size: 15px;
@@ -183,20 +155,20 @@ body > div {
 }
 
 
-.nav-option li:hover {
-    color: var(--primary);
+.nav-item:hover {
+    color: #5b35e7;
 }
 
 
 /* Active Home */
 
-.nav-option li:first-child {
-    color: var(--primary);
+#nav-home {
+    color: #5b35e7;
     font-weight: 700;
 }
 
 
-.nav-option li:first-child::after {
+#nav-home::after {
     content: "";
 
     position: absolute;
@@ -209,7 +181,7 @@ body > div {
 
     border-radius: 10px;
 
-    background: var(--primary);
+    background: #5b35e7;
 }
 
 
@@ -241,16 +213,16 @@ body > div {
 /* Login */
 
 .btn1 {
-    color: var(--primary);
+    color: #5b35e7;
 
     background: #ffffff;
 
-    border: 1.5px solid var(--primary);
+    border: 1.5px solid #5b35e7;
 }
 
 
 .btn1:hover {
-    background: var(--primary);
+    background: #5b35e7;
     color: white;
 
     transform: translateY(-2px);
@@ -343,7 +315,7 @@ body > div {
 
 /* Left content */
 
-.section1 > div:first-child {
+#section1-content {
     max-width: 690px;
 
     position: relative;
@@ -355,7 +327,7 @@ body > div {
    HERO BADGE
    ========================================================= */
 
-.section1 h6 {
+.section1-tag {
     display: inline-flex;
 
     align-items: center;
@@ -370,7 +342,7 @@ body > div {
 
     background: #eeeaff;
 
-    color: var(--primary);
+    color: #5b35e7;
 
     font-size: 14px;
 
@@ -380,7 +352,7 @@ body > div {
 }
 
 
-.section1 h6 img {
+.section1-tag-img {
     width: 19px;
     height: 19px;
 
@@ -392,7 +364,7 @@ body > div {
    HERO HEADING
    ========================================================= */
 
-.section1 h1 {
+.section1-title {
     max-width: 700px;
 
     font-size: clamp(42px, 5vw, 68px);
@@ -409,10 +381,10 @@ body > div {
 }
 
 
-.section1 h1 span {
+.section1-title-span {
     display: block;
 
-    color: var(--primary);
+    color: #5b35e7;
 
     background: linear-gradient(
         90deg,
@@ -431,7 +403,7 @@ body > div {
    HERO DESCRIPTION
    ========================================================= */
 
-.section1 p {
+.section1-description {
     max-width: 650px;
 
     font-size: 18px;
@@ -448,7 +420,7 @@ body > div {
    HERO BUTTONS
    ========================================================= */
 
-.section1 > div:first-child > div:last-child {
+#section1-buttons {
     display: flex;
 
     align-items: center;
@@ -457,7 +429,7 @@ body > div {
 }
 
 
-.section1 button {
+.section1-btn {
     min-width: 165px;
 
     height: 56px;
@@ -476,7 +448,7 @@ body > div {
 
 /* First Hero Button */
 
-.section1 button:first-child {
+#get-started-btn {
     background: linear-gradient(
         135deg,
         #6239ec,
@@ -492,12 +464,12 @@ body > div {
 }
 
 
-.section1 button:first-child a {
+#get-started-link {
     color: white;
 }
 
 
-.section1 button:first-child:hover {
+#get-started-btn:hover {
     transform: translateY(-3px);
 
     box-shadow:
@@ -507,22 +479,22 @@ body > div {
 
 /* Learn More */
 
-.section1 button:last-child {
+#learn-more-btn {
     background: white;
 
     border: 1.5px solid #7355ed;
 
-    color: var(--primary);
+    color: #5b35e7;
 }
 
 
-.section1 button:last-child a {
-    color: var(--primary);
+#learn-more-link {
+    color: #5b35e7;
 }
 
 
-.section1 button:last-child:hover {
-    background: var(--primary);
+#learn-more-btn:hover {
+    background: #5b35e7;
 
     color: white;
 
@@ -530,7 +502,7 @@ body > div {
 }
 
 
-.section1 button:last-child:hover a {
+#learn-more-btn:hover .section1-btn-link {
     color: white;
 }
 
@@ -539,7 +511,7 @@ body > div {
    HERO IMAGE
    ========================================================= */
 
-.section1 > div:last-child {
+#section1-image-container {
     min-height: 390px;
 
     display: flex;
@@ -552,7 +524,7 @@ body > div {
 }
 
 
-.section1 > div:last-child::before {
+#section1-image-container::before {
     content: "";
 
     position: absolute;
@@ -568,7 +540,7 @@ body > div {
 }
 
 
-.section1 > div:last-child img {
+#section1-image {
     width: 100%;
     max-width: 600px;
 
@@ -611,7 +583,7 @@ body > div {
    This selector finds the parent containing .card.
 */
 
-body > div > div:has(.card) {
+#cards-section {
     width: 89.4%;
 
     margin: 0 auto;
@@ -670,7 +642,7 @@ body > div > div:has(.card) {
 
 /* Card icon box */
 
-.card > div:first-child {
+.card-icon {
     width: 62px;
     min-width: 62px;
 
@@ -688,7 +660,7 @@ body > div > div:has(.card) {
 }
 
 
-.card img {
+.card-icon-img {
     width: 31px;
     height: 31px;
 
@@ -698,24 +670,24 @@ body > div > div:has(.card) {
 
 /* Different icon backgrounds */
 
-.card:nth-child(2) > div:first-child {
+#manage-members-icon {
     background: #e7f1ff;
 }
 
 
-.card:nth-child(3) > div:first-child {
+#track-transactions-icon {
     background: #e6f8ee;
 }
 
 
-.card:nth-child(4) > div:first-child {
+#get-insights-icon {
     background: #fff4df;
 }
 
 
 /* Card title */
 
-.card h3 {
+.card-title {
     font-size: 17px;
 
     font-weight: 700;
@@ -728,7 +700,7 @@ body > div > div:has(.card) {
 
 /* Card paragraph */
 
-.card p {
+.card-description {
     font-size: 14px;
 
     line-height: 1.5;
@@ -745,7 +717,7 @@ body > div > div:has(.card) {
    Finds the last direct div after cards.
 */
 
-body > div > div:last-child {
+#section2 {
     width: 89.4%;
 
     margin: 30px auto 40px;
@@ -775,7 +747,7 @@ body > div > div:last-child {
 
 /* Statistic item */
 
-body > div > div:last-child > div {
+.stat-card {
     min-height: 75px;
 
     display: flex;
@@ -792,7 +764,9 @@ body > div > div:last-child > div {
 
 /* Divider */
 
-body > div > div:last-child > div:not(:last-child)::after {
+#total-books-stat::after,
+#members-stat::after,
+#transactions-stat::after {
     content: "";
 
     position: absolute;
@@ -809,7 +783,7 @@ body > div > div:last-child > div:not(:last-child)::after {
 
 /* Stat icon */
 
-body > div > div:last-child > div > div:first-child {
+.stat-icon {
     width: 48px;
     height: 48px;
 
@@ -823,7 +797,7 @@ body > div > div:last-child > div > div:first-child {
 }
 
 
-body > div > div:last-child img {
+.stat-icon-img {
     width: 30px;
     height: 30px;
 
@@ -833,7 +807,7 @@ body > div > div:last-child img {
 
 /* Stat number */
 
-body > div > div:last-child h3 {
+.stat-number {
     color: #4325d1;
 
     font-size: 27px;
@@ -846,7 +820,7 @@ body > div > div:last-child h3 {
 
 /* Stat label */
 
-body > div > div:last-child p {
+.stat-label {
     color: #566184;
 
     font-size: 14px;
@@ -862,7 +836,7 @@ body > div > div:last-child p {
 .card,
 .btn1,
 .btn2,
-.section1 button {
+.section1-btn {
     will-change: transform;
 }
 
@@ -878,7 +852,7 @@ body > div > div:last-child p {
     }
 
 
-    .nav-option ul {
+    .nav-list {
         gap: 25px;
     }
 
@@ -903,13 +877,13 @@ body > div > div:last-child p {
     }
 
 
-    .section1 h1 {
+    .section1-title {
         font-size: 48px;
     }
 
 
-    body > div > div:has(.card),
-    body > div > div:last-child {
+    #cards-section,
+    #section2 {
         width: 92%;
     }
 
@@ -920,19 +894,19 @@ body > div > div:last-child p {
     }
 
 
-    .card > div:first-child {
+    .card-icon {
         width: 52px;
         min-width: 52px;
         height: 52px;
     }
 
 
-    .card h3 {
+    .card-title {
         font-size: 15px;
     }
 
 
-    .card p {
+    .card-description {
         font-size: 13px;
     }
 
@@ -961,7 +935,7 @@ body > div > div:last-child p {
     }
 
 
-    .nav-logo img {
+    .logo-img {
         width: 170px;
         height: 48px;
     }
@@ -980,17 +954,17 @@ body > div > div:last-child p {
     }
 
 
-    .nav-option ul {
+    .nav-list {
         gap: 28px;
     }
 
 
-    .nav-option li {
+    .nav-item {
         padding: 10px 0;
     }
 
 
-    .nav-option li:first-child::after {
+    #nav-home::after {
         bottom: 0;
     }
 
@@ -1004,52 +978,54 @@ body > div > div:last-child p {
     }
 
 
-    .section1 > div:first-child {
+    #section1-content {
         margin: auto;
     }
 
 
-    .section1 h1 {
+    .section1-title {
         font-size: 46px;
 
         letter-spacing: -1.5px;
     }
 
 
-    .section1 p {
+    .section1-description {
         margin-left: auto;
         margin-right: auto;
     }
 
 
-    .section1 > div:first-child > div:last-child {
+    #section1-buttons {
         justify-content: center;
     }
 
 
-    .section1 > div:last-child {
+    #section1-image-container {
         min-height: 300px;
     }
 
 
-    .section1 > div:last-child img {
+    #section1-image {
         height: 300px;
     }
 
 
-    body > div > div:has(.card) {
+    #cards-section {
         grid-template-columns: repeat(2, 1fr);
     }
 
 
-    body > div > div:last-child {
+    #section2 {
         grid-template-columns: repeat(2, 1fr);
 
         gap: 20px;
     }
 
 
-    body > div > div:last-child > div:not(:last-child)::after {
+    #total-books-stat::after,
+    #members-stat::after,
+    #transactions-stat::after {
         display: none;
     }
 
@@ -1090,12 +1066,12 @@ body > div > div:last-child p {
     }
 
 
-    .nav-option ul {
+    .nav-list {
         gap: 22px;
     }
 
 
-    .nav-option li {
+    .nav-item {
         font-size: 13px;
     }
 
@@ -1105,52 +1081,52 @@ body > div > div:last-child p {
     }
 
 
-    .section1 h6 {
+    .section1-tag {
         font-size: 12px;
 
         padding: 8px 13px;
     }
 
 
-    .section1 h1 {
+    .section1-title {
         font-size: 37px;
 
         line-height: 1.08;
     }
 
 
-    .section1 p {
+    .section1-description {
         font-size: 15px;
 
         line-height: 1.6;
     }
 
 
-    .section1 > div:first-child > div:last-child {
+    #section1-buttons {
         flex-direction: column;
 
         width: 100%;
     }
 
 
-    .section1 button {
+    .section1-btn {
         width: 100%;
 
         max-width: 280px;
     }
 
 
-    .section1 > div:last-child {
+    #section1-image-container {
         min-height: 240px;
     }
 
 
-    .section1 > div:last-child img {
+    #section1-image {
         height: 240px;
     }
 
 
-    body > div > div:has(.card) {
+    #cards-section {
         width: 90%;
 
         grid-template-columns: 1fr;
@@ -1164,7 +1140,7 @@ body > div > div:last-child p {
     }
 
 
-    body > div > div:last-child {
+    #section2 {
         width: 90%;
 
         grid-template-columns: 1fr;
@@ -1173,14 +1149,16 @@ body > div > div:last-child p {
     }
 
 
-    body > div > div:last-child > div {
+    .stat-card {
         justify-content: flex-start;
 
         padding: 10px 15px;
     }
 
 
-    body > div > div:last-child > div:not(:last-child) {
+    #total-books-stat,
+    #members-stat,
+    #transactions-stat {
         border-bottom: 1px solid #d4cef7;
     }
 
@@ -1193,22 +1171,22 @@ body > div > div:last-child p {
 
 @media (max-width: 400px) {
 
-    .nav-option ul {
+    .nav-list {
         gap: 16px;
     }
 
 
-    .nav-option li {
+    .nav-item {
         font-size: 12px;
     }
 
 
-    .section1 h1 {
+    .section1-title {
         font-size: 32px;
     }
 
 
-    .section1 p {
+    .section1-description {
         font-size: 14px;
     }
 
