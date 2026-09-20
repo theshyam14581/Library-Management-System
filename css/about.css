@@ -1,0 +1,1221 @@
+
+/* =========================================================
+   ABOUT SECTION
+   Library Management System
+   Light + Purple Professional UI
+   ========================================================= */
+
+
+/* =========================================================
+   ABOUT PAGE
+   ========================================================= */
+
+.about-page {
+    width: 89.4%;
+    min-height: 700px;
+    margin: 80px auto 100px;
+    display: grid;
+    grid-template-columns: 1fr 0.95fr;
+
+    align-items: center;
+
+    gap: 60px;
+
+    position: relative;
+
+    overflow:hidden;
+}
+
+
+/* =========================================================
+   ABOUT CONTENT
+   ========================================================= */
+
+.about-content {
+    width: 100%;
+    max-width: 680px;
+
+    padding: 20px 0;
+}
+
+
+/* =========================================================
+   ABOUT HEADER
+   ========================================================= */
+
+.about-header {
+    width: 100%;
+}
+
+
+/* ABOUT LABEL */
+
+.about-label {
+    display: inline-flex;
+    align-items: center;
+
+    margin: 0 0 20px;
+
+    padding-left: 45px;
+
+    position: relative;
+
+    font-size: 15px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    color: #4d3bc4;
+}
+
+
+/* Small line before ABOUT US */
+
+.about-label {
+    background-image: linear-gradient(
+        to right,
+        #5b35e7 0,
+        #5b35e7 32px,
+        transparent 32px,
+        transparent 100%
+    );
+
+    background-repeat: no-repeat;
+
+    background-size: 32px 2px;
+
+    background-position: left center;
+}
+
+
+/* =========================================================
+   ABOUT TITLE
+   ========================================================= */
+
+.about-title {
+    max-width: 680px;
+
+    margin: 0 0 25px;
+
+    font-size: clamp(42px, 4.5vw, 62px);
+
+    line-height: 1.08;
+
+    letter-spacing: -2px;
+
+    font-weight: 800;
+
+    color: #111642;
+}
+
+
+/* First title line */
+
+.about-title-line {
+    display: inline;
+}
+
+
+/* Highlighted title */
+
+.about-title-highlight {
+    display: inline;
+
+    color: #5b35e7;
+
+    background: linear-gradient(
+        90deg,
+        #5b35e7,
+        #7549ef
+    );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* =========================================================
+   ABOUT DESCRIPTION
+   ========================================================= */
+
+.about-description {
+    max-width: 650px;
+
+    margin: 0 0 32px;
+
+    font-size: 17px;
+
+    line-height: 1.75;
+
+    color: #596587;
+}
+
+
+/* =========================================================
+   ABOUT POINTS
+   ========================================================= */
+
+.about-points {
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 17px;
+
+    margin-bottom: 30px;
+}
+
+
+/* =========================================================
+   ABOUT POINT
+   ========================================================= */
+
+.about-point {
+    width: 100%;
+
+    min-height: 70px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    padding: 4px 0;
+}
+
+
+/* =========================================================
+   ABOUT POINT ICON
+   ========================================================= */
+
+.about-point-icon {
+    width: 58px;
+    min-width: 58px;
+
+    height: 58px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background: #eeeaff;
+
+    border: 1px solid #dfd8ff;
+}
+
+
+/* Different icon colors */
+
+#vision-icon {
+    background: #e9f0ff;
+    border-color: #d9e5ff;
+}
+
+
+#values-icon {
+    background: #eef8f2;
+    border-color: #d8f0e1;
+}
+
+
+/* =========================================================
+   ABOUT POINT ICON IMAGE
+   ========================================================= */
+
+.about-point-icon-img {
+    width: 29px;
+    height: 29px;
+
+    object-fit: contain;
+}
+
+
+/* =========================================================
+   ABOUT POINT CONTENT
+   ========================================================= */
+
+.about-point-content {
+    flex: 1;
+
+    min-width: 0;
+}
+
+
+/* =========================================================
+   ABOUT POINT TITLE
+   ========================================================= */
+
+.about-point-title {
+    margin: 0 0 5px;
+
+    font-size: 18px;
+
+    font-weight: 700;
+
+    color: #111642;
+}
+
+
+/* =========================================================
+   ABOUT POINT DESCRIPTION
+   ========================================================= */
+
+.about-point-description {
+    margin: 0;
+
+    font-size: 15px;
+
+    line-height: 1.5;
+
+    color: #66708f;
+}
+
+
+/* =========================================================
+   ABOUT ACTIONS
+   ========================================================= */
+
+.about-actions {
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 30px;
+
+    margin-bottom: 35px;
+}
+
+
+/* =========================================================
+   LEARN MORE BUTTON
+   ========================================================= */
+
+.about-learn-btn {
+    min-width: 190px;
+
+    height: 55px;
+
+    padding: 0 28px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: linear-gradient(
+        135deg,
+        #6239ec,
+        #4d2bd3
+    );
+
+    color: #ffffff;
+
+    font-family: inherit;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+
+    box-shadow:
+        0 10px 25px rgba(91, 53, 231, 0.22);
+}
+
+
+.about-learn-btn:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 15px 30px rgba(91, 53, 231, 0.32);
+}
+
+
+/* =========================================================
+   WATCH STORY
+   ========================================================= */
+
+.about-story {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    cursor: pointer;
+}
+
+
+/* Story icon */
+
+.about-story-icon {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    border: 2px solid #d9d2ff;
+
+    background: #ffffff;
+
+    transition: all 0.3s ease;
+}
+
+
+.about-story:hover .about-story-icon {
+    border-color: #5b35e7;
+
+    background: #eeeaff;
+}
+
+
+/* Story icon image */
+
+.about-story-icon-img {
+    width: 20px;
+    height: 20px;
+
+    object-fit: contain;
+}
+
+
+/* Story text */
+
+.about-story-text {
+    font-size: 15px;
+
+    font-weight: 700;
+
+    color: #151a42;
+}
+
+
+/* =========================================================
+   ABOUT STATISTICS
+   ========================================================= */
+
+.about-statistics {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    align-items: center;
+
+    gap: 0;
+
+    padding-top: 10px;
+}
+
+
+/* =========================================================
+   STAT CARD
+   ========================================================= */
+
+.about-stat-card {
+    min-height: 65px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-start;
+
+    gap: 12px;
+
+    position: relative;
+
+    padding: 0 18px;
+}
+
+
+/* First stat */
+
+#total-books-stat {
+    padding-left: 0;
+}
+
+
+/* =========================================================
+   STAT ICON
+   ========================================================= */
+
+.about-stat-card .stat-icon {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 11px;
+
+    background: #eeeaff;
+}
+
+
+/* Members */
+
+#members-icon {
+    background: #e9f0ff;
+}
+
+
+/* Transactions */
+
+#transactions-icon {
+    background: #eaf8f0;
+}
+
+
+/* Satisfaction */
+
+#user-satisfaction-icon {
+    background: #fff3df;
+}
+
+
+/* =========================================================
+   STAT ICON IMAGE
+   ========================================================= */
+
+.about-stat-card .stat-icon-img {
+    width: 23px;
+    height: 23px;
+
+    object-fit: contain;
+}
+
+
+/* =========================================================
+   STAT CONTENT
+   ========================================================= */
+
+.about-stat-card .stat-content {
+    min-width: 0;
+}
+
+
+/* =========================================================
+   STAT NUMBER
+   ========================================================= */
+
+.about-stat-card .stat-number {
+    margin: 0 0 3px;
+
+    font-size: 23px;
+
+    line-height: 1;
+
+    font-weight: 800;
+
+    color: #4325d1;
+}
+
+
+/* =========================================================
+   STAT LABEL
+   ========================================================= */
+
+.about-stat-card .stat-label {
+    margin: 0;
+
+    font-size: 12px;
+
+    font-weight: 500;
+
+    color: #66708f;
+}
+
+
+/* =========================================================
+   RIGHT SIDE IMAGE
+   ========================================================= */
+
+.about-image-container {
+    width: 100%;
+
+    min-height: 620px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    position: relative;
+}
+
+
+/* =========================================================
+   IMAGE WRAPPER
+   ========================================================= */
+
+.about-image-wrapper {
+    width: 100%;
+
+    max-width: 590px;
+
+    min-height: 600px;
+
+    display: flex;
+
+    align-items: flex-end;
+
+    justify-content: center;
+
+    position: relative;
+
+    padding: 20px;
+}
+
+
+/* =========================================================
+   IMAGE BACKGROUND BLOCK
+   ========================================================= */
+
+.about-image-wrapper {
+    background: #735ce5;
+
+    border-radius: 4px;
+
+    transform: translate(20px, -20px);
+}
+
+
+/* =========================================================
+   ABOUT IMAGE
+   ========================================================= */
+
+.about-image {
+    width: 100%;
+
+    max-width: 600px;
+
+    height: 570px;
+
+    object-fit: contain;
+
+    object-position: center bottom;
+
+    position: relative;
+
+    z-index: 2;
+
+    filter:
+        drop-shadow(
+            0 22px 30px
+            rgba(36, 29, 100, 0.18)
+        );
+
+    transition: transform 0.4s ease;
+}
+
+
+/* Image hover */
+
+.about-image-container:hover .about-image {
+    transform: translateY(-5px);
+}
+
+
+/* =========================================================
+   IMAGE CARD
+   ========================================================= */
+
+.about-image-card {
+    width: 300px;
+
+    min-height: 115px;
+
+    padding: 22px 25px;
+
+    position: absolute;
+
+    right: -15px;
+
+    bottom: 30px;
+
+    z-index: 5;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    background: #ffffff;
+
+    border: 1px solid #e8e6f4;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 15px 35px
+        rgba(49, 40, 130, 0.12);
+}
+
+
+/* =========================================================
+   IMAGE CARD LINE
+   ========================================================= */
+
+.about-image-card-line {
+    width: 55px;
+
+    height: 3px;
+
+    margin-bottom: 15px;
+
+    background: #6841e8;
+
+    border-radius: 5px;
+}
+
+
+/* =========================================================
+   IMAGE CARD TITLE
+   ========================================================= */
+
+.about-image-card-title {
+    margin: 0;
+
+    font-size: 19px;
+
+    line-height: 1.35;
+
+    font-weight: 700;
+
+    color: #151a42;
+}
+
+
+/* =========================================================
+   HOVER TRANSITIONS
+   ========================================================= */
+
+.about-point,
+.about-stat-card,
+.about-story,
+.about-image-card {
+    transition: all 0.3s ease;
+}
+
+
+.about-point:hover {
+    transform: translateX(5px);
+}
+
+
+.about-stat-card:hover {
+    transform: translateY(-3px);
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+    .about-page {
+        width: 92%;
+
+        grid-template-columns: 1fr 0.9fr;
+
+        gap: 35px;
+
+        margin-top: 65px;
+    }
+
+
+    .about-title {
+        font-size: 48px;
+
+        letter-spacing: -1.5px;
+    }
+
+
+    .about-description {
+        font-size: 16px;
+    }
+
+
+    .about-image-container {
+        min-height: 540px;
+    }
+
+
+    .about-image-wrapper {
+        min-height: 520px;
+
+        transform: translate(12px, -12px);
+    }
+
+
+    .about-image {
+        height: 500px;
+    }
+
+
+    .about-image-card {
+        width: 260px;
+
+        right: -5px;
+
+        bottom: 20px;
+    }
+
+
+    .about-statistics {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 15px;
+    }
+
+
+    .about-stat-card {
+        padding: 8px 10px;
+    }
+
+
+    #total-books-stat {
+        padding-left: 10px;
+    }
+
+}
+
+
+/* =========================================================
+   TABLET / MOBILE
+   ========================================================= */
+
+@media (max-width: 850px) {
+
+    .about-page {
+        width: 90%;
+
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+
+        margin-top: 60px;
+
+        margin-bottom: 70px;
+    }
+
+
+    .about-content {
+        max-width: 720px;
+
+        margin: 0 auto;
+    }
+
+
+    .about-header {
+        text-align: center;
+    }
+
+
+    .about-label {
+        padding-left: 0;
+
+        padding-bottom: 12px;
+
+        background-image: linear-gradient(
+            to right,
+            #5b35e7,
+            #5b35e7
+        );
+
+        background-size: 35px 2px;
+
+        background-position: center bottom;
+    }
+
+
+    .about-title {
+        max-width: 700px;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        font-size: 44px;
+    }
+
+
+    .about-description {
+        max-width: 650px;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        text-align: center;
+    }
+
+
+    .about-points {
+        max-width: 650px;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .about-actions {
+        justify-content: center;
+    }
+
+
+    .about-statistics {
+        max-width: 650px;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    .about-image-container {
+        width: 100%;
+
+        min-height: 550px;
+    }
+
+
+    .about-image-wrapper {
+        width: 90%;
+
+        max-width: 600px;
+
+        min-height: 520px;
+
+        margin: 0 auto;
+
+        transform: translate(10px, -10px);
+    }
+
+
+    .about-image {
+        height: 500px;
+    }
+
+
+    .about-image-card {
+        right: 2%;
+
+        bottom: 15px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .about-page {
+        width: 90%;
+
+        margin-top: 45px;
+
+        gap: 35px;
+    }
+
+
+    .about-content {
+        padding: 0;
+    }
+
+
+    .about-label {
+        font-size: 12px;
+
+        letter-spacing: 1.5px;
+
+        margin-bottom: 15px;
+    }
+
+
+    .about-title {
+        font-size: 35px;
+
+        line-height: 1.12;
+
+        letter-spacing: -1px;
+
+        margin-bottom: 20px;
+    }
+
+
+    .about-description {
+        font-size: 15px;
+
+        line-height: 1.65;
+
+        margin-bottom: 25px;
+    }
+
+
+    .about-points {
+        gap: 12px;
+
+        margin-bottom: 25px;
+    }
+
+
+    .about-point {
+        gap: 13px;
+    }
+
+
+    .about-point-icon {
+        width: 50px;
+        min-width: 50px;
+
+        height: 50px;
+
+        border-radius: 12px;
+    }
+
+
+    .about-point-icon-img {
+        width: 24px;
+
+        height: 24px;
+    }
+
+
+    .about-point-title {
+        font-size: 16px;
+    }
+
+
+    .about-point-description {
+        font-size: 13px;
+    }
+
+
+    .about-actions {
+        flex-direction: column;
+
+        gap: 18px;
+
+        margin-bottom: 30px;
+    }
+
+
+    .about-learn-btn {
+        width: 100%;
+
+        max-width: 280px;
+    }
+
+
+    .about-story {
+        justify-content: center;
+    }
+
+
+    .about-statistics {
+        grid-template-columns: 1fr 1fr;
+
+        gap: 10px;
+
+        padding-top: 5px;
+    }
+
+
+    .about-stat-card {
+        min-height: 65px;
+
+        padding: 8px;
+
+        gap: 8px;
+    }
+
+
+    #total-books-stat {
+        padding-left: 8px;
+    }
+
+
+    .about-stat-card .stat-icon {
+        width: 36px;
+
+        height: 36px;
+
+        border-radius: 9px;
+    }
+
+
+    .about-stat-card .stat-icon-img {
+        width: 19px;
+
+        height: 19px;
+    }
+
+
+    .about-stat-card .stat-number {
+        font-size: 19px;
+    }
+
+
+    .about-stat-card .stat-label {
+        font-size: 11px;
+    }
+
+
+    .about-image-container {
+        min-height: 390px;
+    }
+
+
+    .about-image-wrapper {
+        width: 95%;
+
+        min-height: 370px;
+
+        padding: 10px;
+
+        transform: translate(5px, -5px);
+
+        border-radius: 3px;
+    }
+
+
+    .about-image {
+        height: 360px;
+    }
+
+
+    .about-image-card {
+        width: 220px;
+
+        min-height: 90px;
+
+        right: 0;
+
+        bottom: 5px;
+
+        padding: 15px 18px;
+    }
+
+
+    .about-image-card-line {
+        width: 40px;
+
+        margin-bottom: 9px;
+    }
+
+
+    .about-image-card-title {
+        font-size: 15px;
+    }
+
+}
+
+
+/* =========================================================
+   EXTRA SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 400px) {
+
+    .about-page {
+        width: 92%;
+
+        margin-top: 35px;
+    }
+
+
+    .about-title {
+        font-size: 30px;
+    }
+
+
+    .about-description {
+        font-size: 14px;
+    }
+
+
+    .about-point-icon {
+        width: 45px;
+
+        min-width: 45px;
+
+        height: 45px;
+    }
+
+
+    .about-point-title {
+        font-size: 15px;
+    }
+
+
+    .about-point-description {
+        font-size: 12px;
+    }
+
+
+    .about-statistics {
+        grid-template-columns: 1fr;
+    }
+
+
+    .about-stat-card {
+        justify-content: center;
+
+        padding: 8px;
+    }
+
+
+    .about-image-container {
+        min-height: 330px;
+    }
+
+
+    .about-image-wrapper {
+        min-height: 315px;
+    }
+
+
+    .about-image {
+        height: 305px;
+    }
+
+
+    .about-image-card {
+        width: 190px;
+
+        min-height: 75px;
+
+        padding: 12px 15px;
+    }
+
+
+    .about-image-card-title {
+        font-size: 13px;
+    }
+
+}
+
